@@ -1,0 +1,215 @@
+.container {
+  width: 70%;
+  /* height: 900px; */
+  border: 2px dotted red;
+  margin: auto;
+}
+
+.logo-section {
+  /* position: absolute; */
+  display: flex;
+  height: 80px;
+  padding-top: 43.2px;
+  padding-left: 130px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.logo {
+  width: 73.6px;
+  height: 73.6px;
+}
+
+.logo-txt p {
+  height: 10px;
+  padding-left: 10px;
+}
+
+.welcome-text {
+  height: 125px;
+  padding-left: 130px;
+  /* padding: 100px; */
+  padding-top: 20px;
+}
+
+.welcome {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 41px;
+  color: #444444;
+  opacity: 0.7;
+}
+
+.what-are-you-looking {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 45px;
+  line-height: 61px;
+
+  color: #444444;
+}
+
+.choose {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 34px;
+  /* identical to box height */
+
+  color: #444444;
+
+  opacity: 0.7;
+}
+
+.select-option {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  
+  padding-top: 20px;
+  /* width: 90%; */
+  margin: auto;
+}
+
+.left-select {
+  background-image: url(./image\ 2.png);
+  display: flex;
+  flex-direction: column-reverse;
+  width: 35%;
+  height: 485px;
+  /* background: linear-gradient(180deg, rgba(0, 0, 0, 0) 46.88%, #000000 100%); */
+  /* background: rgba(0, 0, 0, 0.7); */
+  border-radius: 7px;
+  padding-left: 20px;
+  cursor: pointer;
+
+}
+
+.right-select {
+  background-image: url(./image\ 3.png);
+  display: flex;
+  flex-direction: column-reverse;
+ width: 35%;
+  height: 485px;
+  padding-left: 20px;
+  /* background: linear-gradient(180deg, rgba(0, 0, 0, 0) 46.88%, #333333 100%); */
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.svg-01,
+.svg-02 {
+  height: 40px;
+  width: 40px;
+}
+
+
+.Appoinment-booking {
+  margin-top: 20px;
+  margin-left: 130px;
+}
+
+.Appoinment-booking:hover {
+  text-shadow: 0px 0px 3px #ffffff;
+}
+
+.btn {
+  width: 321px;
+  height: 70px;
+  background: #2aa0f5;
+  border-radius: 100px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.option-text {
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 101.5%;
+  /* or 41px */
+
+  letter-spacing: 0.03em;
+
+  color: #EEEEEE;
+
+  text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+
+}
+
+.option-description-left,
+.option-description-right{
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 34px;
+  width: 70%;
+  color: rgba(238, 238, 238, 0.7);
+  display: none;
+ 
+}
+.left-select:hover .option-description-left{
+  display: block;
+
+}
+.right-select:hover .option-description-right{
+  display: block;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .container{
+    width: 100%;
+  }
+  .select-option{
+    flex-direction: column;
+    width: 100%;
+  }
+  .right-select,.left-select{
+    width: 90%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+ 
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+  .select-option{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .right-select,.left-select{
+
+    width: 100% !important;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+  .container{
+    width: 90%;
+  }
+  .right-select,.left-select{
+    width: 40%;
+  }
+}
